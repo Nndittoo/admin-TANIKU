@@ -25,5 +25,8 @@ class Kilo extends Model
     public function kiloPajak(){
         return $this->hasMany(Pajak::class, 'id');
     }
-
+    
+    public function kiloPajak1(){
+    return $this->belongsTo(Pajak::class, 'id_pajak');
+}
 }

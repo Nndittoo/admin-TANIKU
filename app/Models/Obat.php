@@ -22,6 +22,10 @@ class Obat extends Model
     public function fungsiObat(){
         return $this->belongsToMany(FungsiObat::class, 'id_obat');
     }
+
+    public function fungsiObat1(){
+    return $this->hasMany(FungsiObat::class, 'id_obat');
+}
     public function tutorialObat(){
         return $this->belongsToMany(Tutorial::class, 'id_obat');
     }
